@@ -27,36 +27,36 @@ const Login = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="border shadow p-6 w-80 bg-white">
-        <h2 className="text-2xl font-bold mb-4">Login</h2>
+    <div className="flex justify-center items-center min-h-screen bg-gray-950">
+      <div className="border shadow p-6 w-80 bg-black">
+        <h2 className="text-2xl text-white font-bold mb-4">Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block text-gray-700">Email</label>
+            <label className="block text-white">Email</label>
             <input
               type="email"
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-3 py-2 border"
+              className="w-full px-3 py-2 border text-white"
               placeholder="Enter Email"
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Password</label>
+            <label className="block text-white">Password</label>
             <input
               type="password"
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-2 border"
+              className="w-full px-3 py-2 border text-white"
               placeholder="Enter Password"
             />
           </div>
           <div className="mb-4">
             <button
               type="submit"
-              className="w-full bg-teal-600 text-white py-2"
+              className="w-full bg-yellow-400 text-black py-2"
             >
               Login
             </button>
-            <p className="text-center">
+            <p className="text-center text-white">
               Don't Have Account?<Link to="/register"> Register</Link>
             </p>
           </div>

@@ -5,7 +5,7 @@ import { useAuth } from "../context/ContextProvider";
 const Navbar = ({ setQuery }) => {
   const { user, logout } = useAuth();
   return (
-    <nav className="bg-gray-800 p-4 text-white flex justify-between items-center">
+    <nav className="bg-yellow-400 p-4 text-black flex justify-between items-center">
       <div className="text-xl font-bold">
         <Link to="/">NoteApp</Link>
       </div>
@@ -13,7 +13,7 @@ const Navbar = ({ setQuery }) => {
       <input
         type="text"
         placeholder="Search notes..."
-        className="bg-gray-600 px-4 py-2 rounded"
+        className="bg-white px-4 py-2 rounded"
         onChange={(e) => setQuery(e.target.value)}
       />
       <div>
